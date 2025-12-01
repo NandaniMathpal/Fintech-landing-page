@@ -39,3 +39,11 @@ Creativity – Modern design, subtle animations, and visual polish.
 Testimonials section with smooth animations.
 
 Clean, modular CSS with separate component styles.
+
+<img width="1874" height="1031" alt="image" src="https://github.com/user-attachments/assets/88ba9c4b-b432-4ab3-84e1-e9534f7d5194" />
+
+<img width="1885" height="966" alt="image" src="https://github.com/user-attachments/assets/4b3e10f2-e961-4d7c-8ef4-c2f97864621c" />
+
+<img width="1854" height="858" alt="image" src="https://github.com/user-attachments/assets/946d2ab2-c402-48dc-baae-0d2da6a0e74b" />
+
+
