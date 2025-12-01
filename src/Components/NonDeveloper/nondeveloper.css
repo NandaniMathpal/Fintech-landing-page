@@ -1,0 +1,213 @@
+/* Wrapper Background */
+.nc-wrapper {
+  min-height: 100vh;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.nc-header {
+  text-align: center;
+  max-width: 700px;
+}
+
+.nc-subtitle {
+  color: #4f46e5;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nc-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 10px;
+}
+
+.nc-desc {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #64748b;
+}
+
+/* Card Container */
+.nc-card-container {
+  margin-top: 60px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Individual Card */
+.nc-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hover Effect */
+.nc-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Box */
+.nc-icon-box {
+  width: 60px;
+  height: 60px;
+  background: #4f46e5;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+  overflow: hidden;
+}
+
+.nc-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+/* Card Title & Desc */
+.nc-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.nc-card-desc {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Button */
+.nc-btn {
+  margin-top: 20px;
+  padding: 10px 22px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nc-btn:hover {
+  background: #4338ca;
+}
+
+/* Responsive Fixes */
+
+/* Tablet Screens */
+@media (max-width: 992px) {
+  .nc-title {
+    font-size: 32px;
+  }
+
+  .nc-desc {
+    font-size: 16px;
+  }
+
+  .nc-card-container {
+    gap: 25px;
+  }
+
+  .nc-card {
+    padding: 25px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .nc-wrapper {
+    padding: 40px 15px;
+  }
+
+  .nc-header {
+    max-width: 95%;
+  }
+
+  .nc-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .nc-desc {
+    font-size: 15px;
+  }
+
+  .nc-card-container {
+    grid-template-columns: 1fr; /* stack cards vertically */
+    gap: 20px;
+  }
+
+  .nc-card {
+    width: 100%;
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .nc-card-title {
+    font-size: 20px;
+  }
+
+  .nc-card-desc {
+    font-size: 14px;
+  }
+
+  .nc-icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+
+  .nc-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .nc-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  .nc-title {
+    font-size: 22px;
+  }
+
+  .nc-card {
+    padding: 18px;
+  }
+
+  .nc-icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
+}

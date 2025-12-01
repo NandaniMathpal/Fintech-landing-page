@@ -1,0 +1,123 @@
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+  border-bottom: 1px solid #eee;
+}
+
+/* Left side: logo + links */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+/* Logo */
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Nav links */
+.nav-lists {
+  display: flex;
+  gap: 3vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-lists li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-lists li:hover {
+  color: #007bff;
+}
+
+/* Right Side: Login + Menu */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.6vw 1.5vw;
+  border: 1px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  margin-right: 2vw;
+}
+
+.btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Get Started button */
+.start {
+  background: #007bff;
+  color: white;
+}
+
+.start:hover {
+  background: #005fcc;
+}
+
+/* Mobile Menu Icon */
+.menu i {
+  font-size: 1.8rem;
+  display: none;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 990px) {
+
+  /* Hide nav links & start button */
+  .nav-lists {
+    display: none;
+  }
+
+  .start {
+    display: none;
+  }
+
+  /* Mobile spacing */
+  .navbar {
+    padding: 2vw 4vw;
+  }
+
+  /* Show menu icon */
+  .menu i {
+    display: block;
+  }
+
+  /* Align right content better */
+  .nav-right {
+    gap: 1vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3vw;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

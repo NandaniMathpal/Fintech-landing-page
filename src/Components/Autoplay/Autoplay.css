@@ -1,0 +1,43 @@
+.brand-slider {
+  width: 100%;
+  background: #f4f9ff; 
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.brand-slider .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0; 
+}
+
+.brand-slider .slick-list {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.brand-slider img {
+  width: 110px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(60%);
+  opacity: 0.9;
+  transition: .2s;
+}
+
+.brand-slider img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .brand-slider img {
+    width: 80px;
+    height: 45px;
+  }
+
+  .brand-slider .slick-slide {
+    margin: 0 5px; 
+  }
+}

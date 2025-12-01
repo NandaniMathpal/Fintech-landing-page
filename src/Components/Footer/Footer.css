@@ -1,0 +1,133 @@
+:root {
+  --primary: #4f90ff;
+  --link-hover: #82a9ff;
+}
+
+.footer {
+  background: var(--footer-bg);
+  color: var(--text);
+  padding: 3rem 4rem 1rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+/* Footer Columns */
+.footer-col {
+  flex: 1 1 20%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.footer-logo h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Paragraphs */
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 1.2rem;
+  user-select: text;
+}
+
+/* Headings */
+.footer h2 {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--link-hover);
+}
+
+
+/* Address */
+.footer pre {
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+  line-height: 1.3rem;
+  font-family: monospace;
+  user-select: text;
+}
+
+/* FOOTER BOTTOM BAR */
+.footer-bottom {
+  width: 100%;
+  border-top: 1px solid #2c3166;
+  padding: 1rem 4rem;
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .footer-col {
+    flex: 1 1 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 2rem 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  .social-icons {
+    order: 2;
+  }
+
+  .app-badges {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    padding: 1rem;
+    text-align: center;
+  }
+}
